@@ -6,7 +6,7 @@ class Pdns < Formula
   license "GPL-2.0"
 
   depends_on "pkg-config" => :build
-  depends_on "boost"
+  depends_on "boost@1.60"
   depends_on "lua"
   depends_on "openssl@1.1"
   depends_on "sqlite"
@@ -22,6 +22,7 @@ class Pdns < Formula
       --prefix=#{prefix}
       --sysconfdir=#{etc}/powerdns
       --with-lua
+      --with-boost=#{Formula["boost@1.60"].opt_prefix}
       --with-libcrypto=#{Formula["openssl@1.1"].opt_prefix}
       --with-sqlite3
       --with-modules='gsqlite3 gpgsql'
