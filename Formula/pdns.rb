@@ -27,7 +27,6 @@ class Pdns < Formula
       --with-modules='gsqlite3 gpgsql'
     ]
 
-    system "./bootstrap" if build.head?
     system "./configure", *args
     system "make", "install"
   end
