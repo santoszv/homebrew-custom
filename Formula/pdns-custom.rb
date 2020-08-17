@@ -1,4 +1,4 @@
-class Pdns < Formula
+class PdnsCustom < Formula
   desc "Authoritative nameserver"
   homepage "https://www.powerdns.com"
   url "https://downloads.powerdns.com/releases/pdns-4.3.0.tar.bz2"
