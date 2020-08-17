@@ -25,7 +25,8 @@ class Pdns < Formula
       --with-boost=#{Formula["boost@1.60"].opt_prefix}
       --with-libcrypto=#{Formula["openssl@1.1"].opt_prefix}
       --with-sqlite3
-      --with-modules="gsqlite3 gpgsql"
+      --with-modules=gsqlite3
+      --with-modules=gpgsql
     ]
 
     system "./configure", *args
