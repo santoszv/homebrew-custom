@@ -5,21 +5,6 @@ class Pdns < Formula
   sha256 "6be2e70f100df6f32cb431d5f57ca0aabde1fba6c11d947eccc86d44bdf95d08"
   license "GPL-2.0"
 
-  bottle do
-    sha256 "abda262260fff1178494b353f70b32087e48c934001d15eb92418360a4111ea5" => :catalina
-    sha256 "b3dfd65d42e150a2ce1da416507a975f72cd28bbd9092497c933796afa172e04" => :mojave
-    sha256 "2647076a193298b4cd3db2701a027fcb4e583b556400b13e282e81be5538c24c" => :high_sierra
-  end
-
-  head do
-    url "https://github.com/powerdns/pdns.git"
-
-    depends_on "autoconf" => :build
-    depends_on "automake" => :build
-    depends_on "libtool"  => :build
-    depends_on "ragel"
-  end
-
   depends_on "pkg-config" => :build
   depends_on "boost"
   depends_on "lua"
